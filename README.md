@@ -6,7 +6,7 @@ for commit <https://github.com/xyfy/Abp-Learn-2022/commit/90d6e1c3636e0a3677be66
 
 ## 2022-11-07 Second
 
-for commit <https://github.com/xyfy/Abp-Learn-2022/commit/1fd2eafd31bdf4677a6e9da3cd3aacd800a11dc0>
+for commit <https://github.com/xyfy/Abp-Learn-2022/commit/66bd7cde4c0003061e007cd32c1a7e5ff09d61c4>
 
 ## 2022-11-07 Third
 
