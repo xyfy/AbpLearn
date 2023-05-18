@@ -26,4 +26,4 @@ for commit <https://github.com/xyfy/Abp-Learn-2022/commit/4bae261d9c379e84dec462
 
 ## 2022-12-26 Seventh
 
-for commit <https://github.com/xyfy/Abp-Learn-2022/commit/918db3e407879d068e387200e94948d9fa472b7b>
+for commit <https://github.com/xyfy/Abp-Learn-2022/commit/088ff9cc65becac53ec08abd29a28625c5a8bd12>
