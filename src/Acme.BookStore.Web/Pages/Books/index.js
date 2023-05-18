@@ -20,19 +20,21 @@ $(function () {
                         items: [
                             {
                                 text: l('Edit'),
+                                visible: abp.auth.isGranted('BookStore.Books.Edit'), //CHECK for the PERMISSION
                                 action: function (data) {
                                     editModal.open({ id: data.record.id });
-                                },
+                                }
                             },
                             {
                                 text: l('Delete'),
+                                visible: abp.auth.isGranted('BookStore.Books.Delete'),
                                 confirmMessage: function (data) {
                                     return l('BookDeletionConfirmationMessage', data.record.name);
                                 },
                                 action: function (data) {
                                     acme.bookStore.books.book
                                         .delete(data.record.id)
-                                        .then(function() {
+                                        .then(function () {
                                             abp.notify.info(l('SuccessfullyDeleted'));
                                             dataTable.ajax.reload();
                                         });
@@ -55,6 +57,7 @@ $(function () {
                 {
                     title: l('PublishDate'),
                     data: 'publishDate',
+                    dataFormat: "datetime",
                     render: function (data) {
                         return luxon.DateTime.fromISO(data, {
                             locale: abp.localization.currentCulture.name,
@@ -68,6 +71,7 @@ $(function () {
                 {
                     title: l('CreationTime'),
                     data: 'creationTime',
+                    dataFormat: "datetime",
                     render: function (data) {
                         return luxon.DateTime.fromISO(data, {
                             locale: abp.localization.currentCulture.name,
